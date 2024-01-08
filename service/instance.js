@@ -6,7 +6,7 @@ const authInstance = axios.create({
     baseURL : baseURL,
     timeout : 5000,
     headers :{
-        'content-type' : 'aplication/json'
+        'Content-type' : 'aplication/json'
     }
 });
 
@@ -14,7 +14,7 @@ const protectedInstance = axios.create({
     baseURL : baseURL,
     timeout : 5000,
     headers :{
-        'content-type' : 'aplication/json'
+        'Content-type' : 'aplication/json'
     }
 });
 

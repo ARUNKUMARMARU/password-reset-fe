@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import signup from './signup';
-import Reset from './Reset';
-
 
 function Home() {
   return (
@@ -26,7 +23,7 @@ function Home() {
             name='name'
             placeholder='password...'
             />
-             <p><Link to='/reset'>forgot password?</Link></p>
+             <p><Link to='/Reset'>forgot password?</Link></p>
            </label>
             </div>
             <br/>
@@ -34,7 +31,7 @@ function Home() {
                 <button type='submit'>signin</button>
             </div>
         </form>
-        <p>don't have an account? <Link to='/signup'>signup</Link></p>
+        <p>don't have an account? <Link to='/Sign'>signup</Link></p>
     </div>
   )
 }

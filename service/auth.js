@@ -20,23 +20,25 @@ const authService = {
             return error.response.data;
         }
     },
-    sendEmail:async(email)=>{
+    sendEmail:async(getEmail)=>{
         try{
+            const payload = {email:getEmail}
+            console.log(payload)
             console.log("Sending mail...")
-            const res = await instance.authInstance.post('/reset',email,{headers:{"Content-Type":"application/json"}})
+            const res = await instance.authInstance.post('/reset',payload)
 
-            console.log(res.data);
+            console.log(req.data);
 
-            if (res.data) {
+            if (res.data) {  
                 console.log('Link sent successfully');
                 return res.data;
             } else {
-                console.log('Error sending link');
+                console.log('Try Error sending link');
                 return res.data;
             }
 
         }catch(error) {
-            console.log('Error sending link');
+            console.log('catch Error sending link');
             return error.response.data;
         }
     }

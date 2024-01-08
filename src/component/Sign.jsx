@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import authService from '../service/auth';
+import authService from '../../service/auth';
 
-function signup() {
+function Sign() {
   const [name,setName] = useState('');
   const [email,setEmail] = useState('');
   const [password,setPassword] = useState('');
@@ -71,4 +71,4 @@ function signup() {
   )
 }
 
-export default signup;
+export default Sign;
