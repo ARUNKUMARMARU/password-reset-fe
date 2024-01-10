@@ -6,7 +6,7 @@ function Reset() {
 
  const handleResetLnk=(e)=>{
   e.preventDefault();
-  const getEmail = {email:email}  
+  const getEmail = email
 
   console.log(getEmail);
   authService.sendEmail(getEmail);

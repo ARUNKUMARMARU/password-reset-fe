@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseURL = "https://password-reset-flow-be-thef.onrender.com/api";
+const baseURL = "http://localhost:5000/api";
 
 const authInstance = axios.create({
     baseURL : baseURL,
