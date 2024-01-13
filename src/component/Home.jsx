@@ -23,7 +23,7 @@ function Home() {
             name='name'
             placeholder='password...'
             />
-             <p><Link to='/Reset'>forgot password?</Link></p>
+             <p><Link to='/requestlink'>forgot password?</Link></p>
            </label>
             </div>
             <br/>
