@@ -25,7 +25,7 @@ const authService = {
             const payload = {email:getEmail}
             console.log(payload)
             console.log("Sending mail...")
-            const res = await instance.authInstance.get('/requestlink',payload,{headers:{"Content-Type":"application/json"}})
+            const res = await instance.authInstance.post('/requestlink',payload,{headers:{"Content-Type":"application/json"}})
 
             console.log(req.data);
 
